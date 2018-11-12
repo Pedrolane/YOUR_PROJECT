@@ -1,15 +1,13 @@
----
-title: Le Wagon - Middleman
----
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
-</div>
+
+<h1><%= Date.today.strftime('%A, %b %d') %></h1>
+
+<h2>Today we will play with</h2>
+
+<% learnings = %w(Middleman ERB SCSS layout) %>
+
+<ul>
+  <% learnings.each do |learning| %>
+  <li><%= learning  %></li>
+  <% end %>
+</ul>

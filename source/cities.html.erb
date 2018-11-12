@@ -1,0 +1,17 @@
+<h1>Where can you find Le Wagon ?</h1>
+
+
+
+<div class="container">
+  <div class="row">
+    <% data.cities.each do |city| %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card" style="background-image: url('<%= city.photo%>')">
+          <h2><%= city.name %></h2>
+          <p><%= city.address %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
